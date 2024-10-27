@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "consciousCart",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+     
+      
+      "128": "icon.png"
+    }
+  }
+}

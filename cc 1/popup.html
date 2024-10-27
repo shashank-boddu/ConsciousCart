@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsciousCart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      width: 450px;
+      height: 500px;
+      box-sizing: border-box;
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .rating-section {
+      text-align: left;
+      margin-top: 10px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2b2b2b;
+      background: #00bfae;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .conscious-rating {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    .conscious-rating .icon {
+      margin-right: 8px;
+      font-size: 22px;
+    }
+    .info-block {
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .category {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    .description {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .icon {
+      margin-right: 10px;
+    }
+    .button {
+      display: block;
+      width: 120px;
+      padding: 8px;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .price-trend {
+      display: none;
+      background: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .price-trend div {
+      margin-bottom: 10px;
+    }
+    .price-trend strong {
+      font-size: 18px;
+      color: #007bff; /* Blue color for emphasis */
+    }
+    .price-trend .price-range {
+      font-weight: bold;
+      color: #dc3545; /* Red color for price range */
+    }
+  </style>
+</head>
+<body>
+  <div class="rating-section">
+    <div class="title">Ethical Ratings</div>
+    
+    <div class="conscious-rating">
+      <span class="icon">⭐</span>ConsciousCart Rating: 4/10
+    </div>
+
+    <div class="info-block">
+      <div class="category">
+        <span class="icon">🌿</span>Environment: Low Sustainability
+      </div>
+      <div class="description">
+        (High environmental impact, non-eco-friendly materials)
+      </div>
+
+      <div class="category">
+        <span class="icon">🐾</span>Animal Welfare: Non-Vegan Product
+      </div>
+      <div class="description">
+        (Involves animal-derived materials)
+      </div>
+    </div>
+
+    <a href="#" class="button" id="togglePriceTrend">View Price Trend</a>
+
+    <div class="price-trend" id="priceTrendInfo">
+      <div><strong>Current Price:</strong> ₹2,519</div>
+      <div><strong>Price Range (6 months):</strong> <span class="price-range">₹1,900 - ₹2,800</span></div>
+      <div><strong>Recommendation:</strong> Price slightly above average. Consider setting an alert for ₹2,350</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
